@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Japanese Character Quiz</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    #character { font-size: 5em; margin-bottom: 20px; }
+    input { font-size: 1.5em; padding: 0.5em; }
+    #result { margin-top: 1em; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>Japanese Characters Quiz</h1>
+
+  <label for="mode">Choose Hiragana or Katakana</label>
+  <select id="mode">
+    <option value="hiragana">Hiragana</option>
+    <option value="katakana">Katakana</option>
+
+  </select>
+
+  <div id="character" >あ</div>
+
+  <label for="answer"></label>
+  <input type="text" id="answer" placeholder="Type romaji here" />
+
+
+  <button onclick="checkAnswer()">Submit</button>
+  <div id="result"></div>
+
+  <div id="stats" style="margin-top: 20px;">
+    <p>Total Questions Attempted: <span id="total">0</span></p>
+    <p>Total Questions Correct: <span id="correct">0</span></p>
+    <p>Total Questions Incorrect: <span id="incorrect">0</span></p>
+  </div>
+
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
